@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>CloneDisneyPlus</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <h1>
+                <img class="header__logo" src="./dist/images/StarWarsLogo.png" alt="StarWarsLogo">
+            </h1>
+            <ul class="header__links">
+                <li class="header__links__item">
+                    <a href="https://www.starwars.com/" class="button button--dark">Veja Mais</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero__content">
+            <div class="hero__content__branding">
+                <img src="./dist/images/StarWarsLogo.png" alt="StarWarsLogo">
+            </div>
+            <h2 class="title">
+                Em Uma Galaxia Muito, Muito Distante...
+            </h2>
+        </div>
+    </section>
+    <section class="carrousel">
+        <div class="container pt-5">
+            <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="4000" class="carousel-item active">
+                        <img class="d-block w-100" src="./dist/images/Carrousel/fisrtStarwars.jpg" alt="fisrtStarwars">
+                    </div>
+                    <div data-bs-interval="4000" class="carousel-item">
+                        <img class="d-block w-100" src="./dist/images/Carrousel/battlefront.png" alt="battlefront">
+                        </div>
+                        <div data-bs-interval="4000" class="carousel-item">
+                            <img class="d-block w-100" src="./dist/images/Carrousel/jedisurvivor.avif" alt="jedisurvivor">
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="shows">
+        <nav class="shows__tabs">
+            <button data-tab-button="Prequela" class="shows__tabs__button shows__tabs__button--is-active">
+                Triologia Prequela
+            </button>
+            <button data-tab-button="Original" class="shows__tabs__button">
+                Triologia Original
+            </button>
+            <button data-tab-button="Sequela" class="shows__tabs__button">
+                Triologia Sequela
+            </button>
+        </nav>
+        <ul data-tab-id="Prequela" class="shows__list shows__list--is-active">
+            <li class="shows__list__item">
+                <figure>
+                    <img src="./dist/images/TriologiaPrequela/Star-Wars-Phantom-Menace-I-Poster.jpeg" alt="Star-Wars-Phantom-Menace-I">
+                    <figcaption class="text--big">
+                        Episódio I – A Ameaça Fantasma (1999)
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="shows__list__item">
+                <figure>
+                    <img src="./dist/images/TriologiaPrequela/Star-Wars-Attack-Clones-II-Poster.jpeg" alt="Star-Wars-Attack-Clones-II">
+                    <figcaption class="text--big">
+                        Episódio II – Ataque dos Clones (2002)
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="shows__list__item">
+                <figure>
+                    <img src="./dist/images/TriologiaPrequela/Star-Wars-Revenge-Sith-III-Poster.jpeg" alt="Star-Wars-Revenge-Sith-III">
+                    <figcaption class="text--big">
+                        Episódio III – A Vingança dos Sith (2005)
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+        <ul data-tab-id="Original" class="shows__list">
+            <li class="shows__list__item">
+                <figure>
+                    <img src="./dist/images/TriologiaOriginal/Star-Wars-New-Hope-IV-Poster.jpeg" alt="Star-Wars-New-Hope-IV">
+                    <figcaption class="text--big">
+                        Episódio IV – Uma Nova Esperança (1977)
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="shows__list__item">
+                <figure>
+                    <img src="./dist/images/TriologiaOriginal/Star-Wars-Empire-Strikes-Back-V-Poster.jpeg" alt="Star-Wars-Empire-Strikes-Back-V">
+                    <figcaption class="text--big">
+                        Episódio V – O Império Contra-Ataca (1980)
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="shows__list__item">
+                <figure>
+                    <img src="./dist/images/TriologiaOriginal/Star-Wars-Return-Jedi-VI-Poster.jpeg" alt="Star-Wars-Return-Jedi-VI">
+                    <figcaption class="text--big">
+                        Episódio VI – O Retorno de Jedi (1983)
+                    </figcaption>
+                </figure>            
+            </li>
+        </ul>
+        <ul data-tab-id="Sequela" class="shows__list">
+            <li class="shows__list__item">
+                <figure>
+                    <img src="./dist/images/TriologiaSequela/the-rise-of-skywalker-films-poster.jpeg" alt="the-rise-of-skywalker">
+                    <figcaption class="text--big">
+                        Episódio VII – O Despertar da Força (2015)
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="shows__list__item">
+                <figure>
+                    <img src="./dist/images/TriologiaSequela/the-last-jedi-theatrical-poster-film-page.jpeg" alt="the-last-jedi-theatrical">
+                    <figcaption class="text--big">
+                        Episódio VIII – Os Últimos Jedi (2017)
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="shows__list__item">
+                <figure>
+                    <img src="./dist/images/TriologiaSequela/the-force-awakens-poster.jpeg" alt="the-force-awakens">
+                    <figcaption class="text--big">
+                        Episódio IX – A Ascensão Skywalker (2019)
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </section>
+    <section class="image-text-section">
+        <img src="./dist/images/StarWarsSecao.jpg" alt="imagem para tudo">
+        <div class="image-text-section__text-container">
+            <h3 class="title--small">
+                Desfrute da melhor experiência em qualquer tela!
+            </h3>
+            <p>
+                Assista seus filmes e séries favoritos de Star Wars na TV, tablet, laptop, celular e muito mais. Nossa coleção em 4K está sempre crescendo — e o melhor: você pode aproveitar tudo isso em até 4 telas simultaneamente. Diversão garantida para toda a família!
+            </p>
+        </div>
+    </section>
+    <section class="Tvshows pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="title--small section-title text-center mb-5">
+                        Navegação De séries
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <aside>
+                            <nav class="nav nav-pills flex-column nav-cardapio">
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#Live-Action" class="fw-bold text-start nav-link active">Live Action</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#Lego-Star-Wars" class="fw-bold text-start nav-link ">Lego Star Wars</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#Animation" class="fw-bold text-start nav-link">Animation</button>
+                            </nav>
+                        </aside>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="Live-Action">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/LiveAction/ahsoka-poster-post-catalog.jpeg" alt="ahsoka">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            Ahsoka
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/LiveAction/andor-season-2-series-poster-catalog.jpeg" alt="andor">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            Andor Season-2
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/LiveAction/obi-wan-kenobi-poster-post-catalog.jpeg" alt="Obi Wan">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            Obi Wan Kenobi
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/LiveAction/sw-skeleton-crew-series-poster-catalog.jpeg" alt="SW-Skeleton">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            SW Skeleton Crew
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/LiveAction/the-acolyte-series-poster-catalog.jpeg" alt="uau">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            The Acolyte
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/LiveAction/the-book-of-boba-fett-poster-post.jpeg" alt="BobaBook">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            The Book Of Boba
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/LiveAction/the-mandalorian-poster-post-catalog.jpeg" alt="Madalorian">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            The Madalorian
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Lego-Star-Wars">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/Lego/lego-star-wars-holiday-special-poster-catalog.jpeg" alt="">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            Lego Holiday Special
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/Lego/lego-star-wars-rebuild-the-galaxy-pieces-of-the-past.jpeg" alt="">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            Lego Rebuild The Galaxy Pieces Of The Past
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/Lego/lego-star-wars-rebuild-the-galaxy-poster-catalog.jpeg" alt="">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            Lego Rebuild The Galaxy
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/Lego/lego-star-wars-summer-vacation-poster-catalog.jpeg" alt="">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            Lego Summer Vacation
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/Lego/lego-star-wars-terrifying-tales-poster-catalog.jpeg" alt="">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            Lego Terrrifying Tables
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Animation">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/Animation/rebels-poster-post-catalog.jpeg" alt="Nome da entrada">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            Rebels
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/Animation/resistance-poster-post-catalog.jpeg" alt="Nome da entrada">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            Resistance
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/Animation/tales-of-the-empire-poster-post-catalog.jpeg" alt="Nome da entrada">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            Tables Of The Empire
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/Animation/the-bad-batch-poster-post-catalog.jpeg" alt="Nome da entrada">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            The Bad Batch Poster
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/Animation/the-clone-wars-poster-post-catalog.jpeg" alt="Nome da entrada">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            The Clone Wars
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/Animation/totj-poster-post-catalog.jpeg" alt="Nome da entrada">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            Totj
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/Animation/totu-series-poster-catalog.jpeg" alt="Nome da entrada">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            Totu
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/Animation/visions-s1-poster-post-catalog.jpeg" alt="Nome da entrada">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            Visions
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./dist/images/Animation/yja-poster-post-catalog.jpeg" alt="Nome da entrada">
+                                        <h5 class="text-colored title--small fw-bold mt-2">Star Wars</h5>
+                                        <p class="text">
+                                            YJA
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="pratos-principais">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/pratos/pizza.jpg" alt="Pizza">
+                                        <h5 class="text-colored  title--small fw-bold mt-2">Pizza</h5>
+                                        <p class="text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cardapio/pratos/salmao.jpg" alt="Salmão">
+                                        <h5 class="text-colored  title--small fw-bold mt-2">Salmão</h5>
+                                        <p class="text">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+    <section class="faq">
+        <h2 class="title">Perguntas mais Frequentes</h2>
+        <ul class="faq__questions">
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question title--small" data-faq-question>
+                    1. Por que o Yoda desistiu do duelo com Palpatine em “Revenge of the Sith”?
+                </div>
+                <div class="faq__questions__item__answer text--small">
+                    Fãs recentemente rediscutiram a cena do enfrentamento entre Yoda e Palpatine no Senado de Coruscant — especialmente o momento em que Yoda interrompe o duelo. Uma matéria publicada hoje analisa detalhes sobre o que levou esse recuo estratégico
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question title--small" data-faq-question>
+                    2. Há realmente um “erro de enredo” envolvendo o tempo de construção da Estrela da Morte?
+                </div>
+                <div class="faq__questions__item__answer text--small">
+                    Debates animados surgiram sobre o motivo da segunda Estrela ter sido construída muito mais rápido que a primeira. Muitos fãs argumentam que fatores como reaproveitamento de conhecimento e tecnologia justificam isso. Houve explicações detalhadas para dissipar o suposto “plot hole” 
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question title--small" data-faq-question>
+                    3. O que realmente aconteceu com Qimir em “The Acolyte”?
+                </div>
+                <div class="faq__questions__item__answer text--small">
+                    Manny Jacinto, que interpreta o Sith aprendiz Qimir em The Acolyte, revelou que uma cena intensa e brutal sobre sua personagem foi cortada para manter o tom PG da série.
+                </div>
+            </li>
+            <li class="faq__questions__item">
+                <div class="faq__questions__item__question title--small" data-faq-question>
+                    4. O que vem por aí após o final de “The Rising Skywalker”?
+                </div>
+                <div class="faq__questions__item__answer text--small">
+                    Um recente levantamento na GamesRadar listou o pipeline de produções de Star Wars — incluindo The Mandalorian & Grogu (2026), Starfighter (2027) com Ryan Gosling, a nova trilogia de Simon Kinberg e muito mais.
+                </div>
+            </li>
+        </ul>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <img class="footer__logo" src="./dist/images/StarWarsLogo.png" alt="logotarwars">
+            <ul class="footer__links">
+                <li class="footer__links__item">
+                    <div class="language-selector">
+                        <select>
+                            <option>English</option>
+                            <option selected>Português</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Termos e Condições de Uso</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">Política de privacidade</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Proteção de Dados no Brasil</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Anúncios personalizados</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">
+                        Dispositivos compatíveis
+                    </a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="#" class="text--small">Ajuda</a>
+                </li>
+                <li class="footer__links__item">
+                    <a href="" class="text--small">Sobre o Star Wars</a>
+                </li>
+            </ul>
+            <marquee direction="left">Todo o conteúdo original presente neste site, incluindo textos, artigos, ilustrações personalizadas, design e organização das informações, é protegido por direitos autorais e pertence exclusivamente aos administradores deste site.</marquee>
+        </div>
+    </footer>
+    <script src="./dist/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

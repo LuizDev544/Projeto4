@@ -1,0 +1,37 @@
+@use 'variaveis';
+
+.Tvshows {
+    padding: 5.6vw;
+    background-color: variaveis.$corDeFundo;
+
+    h2{
+        color: variaveis.$corTextoTerciario;
+    }
+
+    button {
+            color: variaveis.$BotaoPrimario;
+            background-color: transparent;
+            border: 2px solid;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+
+            &:hover {
+                background-color: variaveis.$BotaoPrimario;
+                color: white;
+            }
+
+            &:focus,
+            &:active {
+                    background-color: variaveis.$BotaoPrimario !important;
+                    color: white !important;
+                    outline: none;
+                    box-shadow: none;
+            }
+}
+
+}
+

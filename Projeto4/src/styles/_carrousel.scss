@@ -1,0 +1,19 @@
+@use 'variaveis';
+
+    .carrousel {
+        background-color: variaveis.$corDeFundo !important;
+
+    .container {
+        background-color: variaveis.$corDeFundo !important;
+    }
+
+    .carousel-inner {
+        background-color: variaveis.$corDeFundo !important;
+    }
+
+    .carousel-item img {
+        max-height: 650px;
+        object-fit: cover; 
+        width: 100%;
+    }
+}

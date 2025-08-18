@@ -1,0 +1,40 @@
+@use 'variaveis';
+
+.hero{
+    padding: 5.6vw;
+    min-height: 88vh;
+    background-image: url(../images/StarWarsBranding.jpg);
+    background-color: variaveis.$corDeFundo;
+    text-align: center;
+    background-size: cover;
+
+    @media (max-width: 768px) {
+        padding-top: calc(50vw + 25px);
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: -55px;
+    } 
+
+    &__content{
+        max-width: 640px;
+
+        .title{
+                margin-bottom: 64px;
+                color: variaveis.$corTextoTerciario;
+        }
+        
+        &__branding {
+            max-width: 320px;
+            margin: 0 auto 38px;
+
+            img{
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            max-width: 180px;
+        }
+
+        }
+}
